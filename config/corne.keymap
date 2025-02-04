@@ -28,9 +28,9 @@
 // | SHFT | BT1 | BT2 | BT3 |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-    &kp N1      &kp N2       &kp N3       &kp UP     &kp N4     &kp N5                              &kp N6        &kp N7          &mmv MOVE_UP     &kp N8          &kp N9            &kp N0
-    &trans      &trans       &kp LEFT     &kp DOWN   &kp RIGHT  &trans                              &mkp LCLK     &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT &mmv Right click  &msc SCRL_UP
-    &trans      &trans       &trans       &trans     &trans     &trans                              &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_CLR      &trans            &msc SCRL_DOWN
+    &kp N1      &kp N2       &kp N3       &kp UP     &kp N4     &kp N5                              &kp N6        &kp N7          &mmv MOVE_UP     &kp N8          &kp N9     &kp N0
+    &trans      &trans       &kp LEFT     &kp DOWN   &kp RIGHT  &trans                              &mkp LCLK     &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT &mmv RCLK  &msc SCRL_UP
+    &trans      &trans       &trans       &trans     &trans     &trans                              &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_CLR      &trans     &msc SCRL_DOWN
                                                      &kp LGUI  &trans  &kp SPACE              &kp RET  &trans   &kp RALT
                         >;
                 };
