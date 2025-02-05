@@ -19,9 +19,9 @@
 #
 ---
 include:
-  - board: nrf5340dk_nrf5340_cpuapp
+  - board: nice_nano_v2
     shield: corne_left
-  - board: nrf5340dk_nrf5340_cpuapp
+  - board: nice_nano_v2
     shield: corne_right
-  # - board: nrfmicro_13
-  #   shield: settings_reset
+  - board: nice_nano_v2
+    shield: settings_reset
