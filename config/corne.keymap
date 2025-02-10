@@ -12,31 +12,28 @@
 
 #include <dt-bindings/zmk/outputs.h>
 
+// https://zmk.dev/docs/config/behaviors#two-axis-input
+// &mmv { // mouse movement
+//     x-input-code = <INPUT_REL_X>;
+//     y-input-code = <INPUT_REL_Y>;
+//     time-to-max-speed-ms = <500>;
+//     acceleration-exponent = <1>;
+// };
+
+// &msc { // mouse scroll
+//     x-input-code = <INPUT_REL_HWHEEL>;
+//     y-input-code = <INPUT_REL_WHEEL>;
+//     time-to-max-speed-ms = <500>;
+//     // 0 - uniform speed, 1 - uniform acceleration, 2 - linear acceleration
+//     acceleration-exponent = <1>;
+// };
+
+// https://zmk.dev/docs/keymaps/behaviors/soft-off
+&soft_off {
+    hold-time-ms = <5000>;         // Only turn off it the key is held for 5 seconds or longer.
+};
 
 / {
-
-    // https://zmk.dev/docs/config/behaviors#two-axis-input
-    // &mmv { // mouse movement
-    //     x-input-code = <INPUT_REL_X>;
-    //     y-input-code = <INPUT_REL_Y>;
-    //     time-to-max-speed-ms = <500>;
-    //     acceleration-exponent = <1>;
-    // };
-
-    // &msc { // mouse scroll
-    //     x-input-code = <INPUT_REL_HWHEEL>;
-    //     y-input-code = <INPUT_REL_WHEEL>;
-    //     time-to-max-speed-ms = <500>;
-    //     // 0 - uniform speed, 1 - uniform acceleration, 2 - linear acceleration
-    //     acceleration-exponent = <1>;
-    // };
-
-    // https://zmk.dev/docs/keymaps/behaviors/soft-off
-    &soft_off {
-       hold-time-ms = <5000>;         // Only turn off it the key is held for 5 seconds or longer.
-    };
-
-
 
     // https://zmk.dev/docs/keymaps/conditional-layers
     conditional_layers {
@@ -75,7 +72,7 @@
         //         = 
         //         // switch to the layer and hold LALT
         //         , <&macro_press &mo 1>, <&macro_press &kp LALT>
-                
+
         //         // wait for physical key release..?
         //         , <&macro_pause_for_release>
 
