@@ -92,26 +92,6 @@
         };
     };
 
-    // behaviors {
-
-
-        // Switch window's manager workspace on hold or press LGUI on tap
-        // wssw: wssw { 
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>; // amount of arguments
-        //     // tap, hold
-        //     bindings = <&kp G>, <&lm 4 LALT>;
-        // };
-
-        // Switch window's manager workspace on hold or press LGUI on tap
-        // swl: wssw { 
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>; // amount of arguments
-        //     // tap, hold
-        //     bindings =  <&swlm>, <&kp LCTRL>;
-        // };
-    // };
-
 
 
     keymap {
@@ -124,7 +104,7 @@
 //├───────────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤   
    &mt LSHFT TAB  &kp A    &kp S    &kp D    &kp F    &kp G                               &kp H    &kp J     &kp K    &kp L   &kp SEMI &kp SQT
 //├───────────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   &mt LCTRL &swlm       &kp Z    &kp X    &kp C    &kp V    &kp B                           &kp N    &kp M   &kp COMMA  &kp DOT &kp FSLH &lm 4 LALT
+   &mt LCTRL       &kp Z    &kp X    &kp C    &kp V    &kp B                           &kp N    &kp M   &kp COMMA  &kp DOT &kp FSLH &lm 4 LALT
 //└───────────────┴────────┴────────┴────────┴────────┴────────┘                          └────────┴────────┴────────┴────────┴────────┴────────┘
 //                                  ┌────────┬────────┬────────┐            ┌────────┬────────┬────────┐
                                      &kp LGUI    &mo 1  &kp SPACE              &kp RET  &mo 2   &kp LALT
