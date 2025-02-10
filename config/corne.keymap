@@ -17,20 +17,20 @@
 / {
 
     // https://zmk.dev/docs/config/behaviors#two-axis-input
-    &mmv { // mouse movement
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        time-to-max-speed-ms = <500>;
-        acceleration-exponent = <1>;
-    };
+    // &mmv { // mouse movement
+    //     x-input-code = <INPUT_REL_X>;
+    //     y-input-code = <INPUT_REL_Y>;
+    //     time-to-max-speed-ms = <500>;
+    //     acceleration-exponent = <1>;
+    // };
 
-    &msc { // mouse scroll
-        x-input-code = <INPUT_REL_HWHEEL>;
-        y-input-code = <INPUT_REL_WHEEL>;
-        time-to-max-speed-ms = <500>;
-        // 0 - uniform speed, 1 - uniform acceleration, 2 - linear acceleration
-        acceleration-exponent = <1>;
-    };
+    // &msc { // mouse scroll
+    //     x-input-code = <INPUT_REL_HWHEEL>;
+    //     y-input-code = <INPUT_REL_WHEEL>;
+    //     time-to-max-speed-ms = <500>;
+    //     // 0 - uniform speed, 1 - uniform acceleration, 2 - linear acceleration
+    //     acceleration-exponent = <1>;
+    // };
 
     // https://zmk.dev/docs/keymaps/behaviors/soft-off
     // &soft_off {
