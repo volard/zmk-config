@@ -33,10 +33,10 @@
     };
 
     // https://zmk.dev/docs/keymaps/behaviors/soft-off
-    &soft_off {
-       split-peripheral-off-on-press; // Turn peripheral off immediately for reliability
-       hold-time-ms = <5000>;         // Only turn off it the key is held for 5 seconds or longer.
-    };
+    // &soft_off {
+    //    split-peripheral-off-on-press; // Turn peripheral off immediately for reliability
+    //    hold-time-ms = <5000>;         // Only turn off it the key is held for 5 seconds or longer.
+    // };
 
 
 
@@ -49,15 +49,15 @@
         };
     };
 
-    
+    kscan: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+    };
 
-    behaviors {
+    // behaviors {
         // https://zmk.dev/docs/features/low-power-states#wakeup-sources
-        kscan: kscan {
-            compatible = "zmk,kscan-gpio-matrix";
-            diode-direction = "col2row";
-            wakeup-source;
-        };
+       
 
 
         /**
@@ -94,7 +94,7 @@
         //     // tap, hold
         //     bindings = <&kp LGUI>, <&lm>;
         // };
-    };
+    // };
 
 
 
