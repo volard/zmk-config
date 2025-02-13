@@ -29,10 +29,10 @@
 };
 
 // https://zmk.dev/docs/keymaps/behaviors/soft-off
-&soft_off {
+//&soft_off {
     // Its actually inconvenient :((
     // hold-time-ms = <5000>;         // Only turn off it the key is held for 5 seconds or longer.
-};
+//};
 
 / {
 
@@ -148,7 +148,6 @@
 
         both_layer { // 3rd
             display-name = "both_layer";
-            status = "reserved";
             bindings = <
 //┌────────────┬────────────┬────────────┬────────────┬──────────┬────────┐      ┌────────────┬──────────────┬───────────────┬───────────────┬────────────────┬─────────────────┐     
    &kp F1        &kp F2         &kp F3       &kp F4      &kp F5    &kp F6           &kp F7        &kp F8        &kp F9           &kp F10        &kp F11          &kp F12
@@ -165,7 +164,6 @@
 
         sw_layer { // 4th
             display-name = "sw_test_layer";
-            status = "reserved";
             bindings = <
 //┌────────────┬────────────┬────────────┬────────────┬──────────┬────────┐      ┌────────────┬──────────────┬───────────────┬───────────────┬────────────────┬─────────────────┐     
    &trans        &trans         &trans       &trans      &trans    &trans           &trans        &kp N7        &kp N8           &kp N9        &trans          &trans
