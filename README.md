@@ -1,3 +1,4 @@
 - win and space sucks now - assign ready to use macro somewhere
 - easier alt plus nums maybe for better tiling experience (maybe make alt key enable holding keys layer?)
 - move mouse and keys to a double keypress layer?
+- nums are bad now (tooo much left pinky stress)

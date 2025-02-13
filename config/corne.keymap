@@ -30,7 +30,8 @@
 
 // https://zmk.dev/docs/keymaps/behaviors/soft-off
 &soft_off {
-    hold-time-ms = <5000>;         // Only turn off it the key is held for 5 seconds or longer.
+    // Its actually inconvenient :((
+    // hold-time-ms = <5000>;         // Only turn off it the key is held for 5 seconds or longer.
 };
 
 / {
@@ -98,13 +99,14 @@
         compatible = "zmk,keymap";
 
         default_layer { // 0th
+            display-name = "Base";
             bindings = <
 //┌───────────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-   &gresc          &kp Q    &kp W    &kp E    &kp R    &kp T                               &kp Y    &kp U     &kp I    &kp O   &kp P    &kp BSPC
-//├───────────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤   
-   &mt LSHFT TAB  &kp A    &kp S    &kp D    &kp F    &kp G                               &kp H    &kp J     &kp K    &kp L   &kp SEMI &kp SQT
+   &gresc          &kp Q    &kp W    &kp E    &kp R    &kp T                               &kp Y     &kp U     &kp I    &kp O   &kp P    &kp BSPC
 //├───────────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-   &mt LCTRL       &kp Z    &kp X    &kp C    &kp V    &kp B                           &kp N    &kp M   &kp COMMA  &kp DOT &kp FSLH &lm 4 LALT
+   &kp LSHFT       &kp A    &kp S    &kp D    &kp F    &kp G                                &kp H     &kp J     &kp K    &kp L   &kp SEMI &kp SQT
+//├───────────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
+   &mt LCTRL       &kp Z    &kp X    &kp C    &kp V    &kp B                               &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH &kp TAB
 //└───────────────┴────────┴────────┴────────┴────────┴────────┘                          └────────┴────────┴────────┴────────┴────────┴────────┘
 //                                  ┌────────┬────────┬────────┐            ┌────────┬────────┬────────┐
                                      &kp LGUI    &mo 1  &kp SPACE              &kp RET  &mo 2   &kp LALT
@@ -113,6 +115,7 @@
      };
 
         lower_layer { // 1st
+            display-name = "lower_layer";
             bindings = <
 //┌──────────┬────────────┬────────────┬────────────┬──────────┬────────┐      ┌────────────┬──────────────┬───────────────┬───────────────┬────────────────┬─────────────────┐     
     &kp N1      &kp N2       &kp N3       &kp UP       &kp N4    &kp N5           &kp N6         &kp N7      &mmv MOVE_UP    &kp N8           &kp N9          &kp N0
@@ -128,6 +131,7 @@
         };
 
         raise_layer { // 2nd
+            display-name = "raise_layer";
             bindings = <
 //┌──────────┬────────────┬────────────┬────────────┬──────────┬────────┐      ┌────────────┬──────────────┬───────────────┬───────────────┬────────────────┬─────────────────┐     
     &kp EXCL     &kp AT    &kp HASH     &kp PAGE_UP   &kp DLLR  &kp PRCNT        &kp CARET     &kp AMPS       &kp ASTRK       &kp LPAR        &kp RPAR         &trans
@@ -143,13 +147,15 @@
         };
 
         both_layer { // 3rd
+            display-name = "both_layer";
+            status = "reserved";
             bindings = <
 //┌────────────┬────────────┬────────────┬────────────┬──────────┬────────┐      ┌────────────┬──────────────┬───────────────┬───────────────┬────────────────┬─────────────────┐     
    &kp F1        &kp F2         &kp F3       &kp F4      &kp F5    &kp F6           &kp F7        &kp F8        &kp F9           &kp F10        &kp F11          &kp F12
 //├────────────┼────────────┼────────────┼────────────┼──────────┼────────┤      ├────────────┼──────────────┼───────────────┼───────────────┼────────────────┼─────────────────┤
    &trans         &trans       &trans       &trans       &trans    &trans          &trans        &trans         &trans            &trans         &trans          &trans
 //├────────────┼────────────┼────────────┼────────────┼──────────┼────────┤      ├────────────┼──────────────┼───────────────┼───────────────┼────────────────┼─────────────────┤
-   &out OUT_TOG   &soft_off     &trans       &trans       &trans    &trans         &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2       &trans       &trans            &bt BT_CLR
+   &trans        &out OUT_TOG   &soft_off   &trans       &trans    &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2       &trans       &trans            &bt BT_CLR
 //└────────────┴────────────┴────────────┴────────────┴──────────┴────────┘      └────────────┴──────────────┴───────────────┴───────────────┴────────────────┴─────────────────┘
 //                                           ┌────────┬────────┬────────┐      ┌────────┬────────┬────────┐
                                               &trans    &trans   &trans          &trans   &trans   &trans
@@ -158,6 +164,8 @@
         };
 
         sw_layer { // 4th
+            display-name = "sw_test_layer";
+            status = "reserved";
             bindings = <
 //┌────────────┬────────────┬────────────┬────────────┬──────────┬────────┐      ┌────────────┬──────────────┬───────────────┬───────────────┬────────────────┬─────────────────┐     
    &trans        &trans         &trans       &trans      &trans    &trans           &trans        &kp N7        &kp N8           &kp N9        &trans          &trans
