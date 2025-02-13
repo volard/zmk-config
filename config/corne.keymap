@@ -23,7 +23,7 @@
 &msc { // mouse scroll
     x-input-code = <INPUT_REL_HWHEEL>;
     y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <500>;
+    time-to-max-speed-ms = <300>;
     // 0 - uniform speed, 1 - uniform acceleration, 2 - linear acceleration
     acceleration-exponent = <1>;
 };
@@ -99,6 +99,7 @@
         compatible = "zmk,keymap";
 
         default_layer { // 0th
+            display-name = "base_layer";
             bindings = <
 //┌───────────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
    &gresc          &kp Q    &kp W    &kp E    &kp R    &kp T                               &kp Y     &kp U     &kp I    &kp O   &kp P    &kp BSPC
@@ -146,7 +147,7 @@
         };
 
         both_layer { // 3rd
-        status="reserved";
+        //status="reserved";
             display-name = "both_layer";
             bindings = <
 //┌────────────┬────────────┬────────────┬────────────┬──────────┬────────┐      ┌────────────┬──────────────┬───────────────┬───────────────┬────────────────┬─────────────────┐     
@@ -163,7 +164,7 @@
         };
 
         sw_layer { // 4th
-        status="reserved";
+        //status="reserved";
             display-name = "sw_test_layer";
             bindings = <
 //┌────────────┬────────────┬────────────┬────────────┬──────────┬────────┐      ┌────────────┬──────────────┬───────────────┬───────────────┬────────────────┬─────────────────┐     
