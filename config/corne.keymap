@@ -23,7 +23,7 @@
 &msc { // mouse scroll
     x-input-code = <INPUT_REL_HWHEEL>;
     y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <300>;
+    time-to-max-speed-ms = <500>;
     // 0 - uniform speed, 1 - uniform acceleration, 2 - linear acceleration
     acceleration-exponent = <1>;
 };
@@ -151,7 +151,7 @@
 //├────────────┼────────────┼────────────┼────────────┼──────────┼────────┤      ├────────────┼──────────────┼───────────────┼───────────────┼────────────────┼─────────────────┤
    &trans         &trans       &trans       &trans       &trans    &trans          &trans        &trans         &trans            &trans         &trans          &trans
 //├────────────┼────────────┼────────────┼────────────┼──────────┼────────┤      ├────────────┼──────────────┼───────────────┼───────────────┼────────────────┼─────────────────┤
-   &trans        &out OUT_TOG   &soft_off   &trans       &trans    &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2       &trans       &trans            &bt BT_CLR
+   &trans        &out OUT_TOG   &soft_off   &trans       &trans    &trans          &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2       &trans       &trans            &bt BT_CLR
 //└────────────┴────────────┴────────────┴────────────┴──────────┴────────┘      └────────────┴──────────────┴───────────────┴───────────────┴────────────────┴─────────────────┘
 //                                           ┌────────┬────────┬────────┐      ┌────────┬────────┬────────┐
                                               &trans    &trans   &trans          &trans   &trans   &trans
