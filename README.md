@@ -7,6 +7,7 @@
 - [keymap-editor GitHub](https://github.com/nickcoutsos/keymap-editor)
 - [Awesome Split Keyboards](https://github.com/diimdeep/awesome-split-keyboards)
 - [ZMK docs](https://zmk.dev/docs)
+- [Using ZMK combos](https://blog.benstein.nl/posts/using-zmk-combos/)
 
 # It's a Jersey Thing
 - easier alt plus nums maybe for better tiling experience (maybe make alt key enable holding keys layer?)
