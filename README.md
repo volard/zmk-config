@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/0e0ea439-6645-4c38-8ab7-3975dad3fe56)
+![image](https://github.com/user-attachments/assets/b5dad619-ae68-4851-9e55-0280dec2e5d2)
+
 
 # Firmware
 Get the last [GitHub action](https://github.com/volard/zmk-config/actions/workflows/build.yml?query=is%3Asuccess+branch%3Amaster) artifact
