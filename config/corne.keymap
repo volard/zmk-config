@@ -5,7 +5,7 @@
 // --------------- mouse
 // https://zmk.dev/docs/keymaps/behaviors/mouse-emulation#advanced-configuration
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
 // ----------------------
@@ -129,7 +129,7 @@
    &kp LCTRL       &kp Z        &kp X        &kp C       &kp V         &kp B            &kp N         &kp M           &kp COMMA      &kp DOT          &kp FSLH         &swlm
 //└──────────────┴────────────┴────────────┴────────────┴────────────┴────────┘      └────────────┴──────────────┴───────────────┴───────────────┴────────────────┴─────────────────┘
 //                                                 ┌────────┬────────┬────────┐      ┌────────┬────────┬────────┐
-                                                    &kp LALT   &mo 1  &kp SPACE       &kp RET   &mo 2   &lm 5 LGUI
+                                                    &kp LALT   &mo 1  &kp SPACE       &kp RET   &mo 2   &kp LGUI
 //                                                 └────────┴────────┴────────┘      └────────┴────────┴────────┘
             >;
      };
