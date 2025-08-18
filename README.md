@@ -1,9 +1,5 @@
 ![image](https://github.com/user-attachments/assets/b5dad619-ae68-4851-9e55-0280dec2e5d2)
 
-
-# Firmware
-Get the last [GitHub action](https://github.com/volard/zmk-config/actions/workflows/build.yml?query=is%3Asuccess+branch%3Amaster) artifact
-
 # Useful
 - [keymap-drawer GitHub](https://github.com/caksoylar/keymap-drawer)
 - [keymap-drawer Web](https://keymap-drawer.streamlit.app)
