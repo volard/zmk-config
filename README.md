@@ -1,3 +1,5 @@
+"Philosophy" of some keys placement lies around my habits from regular mono keyboards, so I could spend less time adapting back to it in case I have to
+
 ![image](https://github.com/user-attachments/assets/b5dad619-ae68-4851-9e55-0280dec2e5d2)
 
 # Useful
