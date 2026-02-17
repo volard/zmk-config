@@ -2,6 +2,9 @@
 
 ![image](https://github.com/user-attachments/assets/b5dad619-ae68-4851-9e55-0280dec2e5d2)
 
+# Todo
+- hold left GUI + left alt to enable one more layer and make corne look a little more like k02
+
 # Useful
 - [keymap-drawer GitHub](https://github.com/caksoylar/keymap-drawer)
 - [keymap-drawer Web](https://keymap-drawer.streamlit.app)
