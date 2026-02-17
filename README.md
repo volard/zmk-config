@@ -4,6 +4,8 @@
 
 # Todo
 - hold left GUI + left alt to enable one more layer and make corne look a little more like k02
+- move ble setting keys somewhere deeper in different layer
+- remove quick tile windows navigation layer - it failed badly
 
 # Useful
 - [keymap-drawer GitHub](https://github.com/caksoylar/keymap-drawer)
